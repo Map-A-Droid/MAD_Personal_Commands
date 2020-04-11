@@ -2,7 +2,7 @@
   "ATV - Get device IP address": [
     {
       "TYPE": "jobType.PASSTHROUGH",
-      "SYNTAX": "ifconfig wlan0 |grep 'inet addr' |cut -d ':' -f2 |cut -d ' ' -f1 && ifconfig eth0 |grep 'inet addr' |cut -d ':' -f2 |cut -d ' ' -f1"
+      "SYNTAX": "awk '/32 host/ {print f} {f=$2}' /proc/net/fib_trie | grep -v 127.0.0.1"
     }
   ]
 }
