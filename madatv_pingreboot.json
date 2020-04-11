@@ -5,6 +5,12 @@
       "SYNTAX": "su -c 'touch /sdcard/pingreboot'"
     }
   ],
+  "ATV - Pingreboot: disable": [
+    {
+      "TYPE": "jobType.PASSTHROUGH",
+      "SYNTAX": "su -c 'rm /sdcard/pingreboot'"
+    }
+  ],
   "ATV - Pingreboot: status": [
     {
       "TYPE": "jobType.PASSTHROUGH",
