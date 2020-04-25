@@ -3,7 +3,7 @@
         [
                 {
                         "TYPE": "jobType.PASSTHROUGH",
-                        "SYNTAX": "cat /data/system/sync/accounts.xml  | grep 'com.android.contacts\"' | cut -d'\"' -f8"
+                        "SYNTAX": "grep 'com.android.contacts\"' /data/system/sync/accounts.xml | cut -d'\"' -f8"
                 }
         ]
 }
