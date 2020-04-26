@@ -1,9 +1,8 @@
 {
-            "Custom - Get Google Accounts":
-        [
-                {
-                        "TYPE": "jobType.PASSTHROUGH",
-                        "SYNTAX": "grep 'com.android.contacts\"' /data/system/sync/accounts.xml | cut -d'\"' -f8"
-                }
-        ]
+  "Custom - Get Google Accounts": [
+    {
+      "TYPE": "jobType.PASSTHROUGH",
+      "SYNTAX": "grep 'com.android.contacts\"' /data/system/sync/accounts.xml | cut -d'\"' -f8"
+    }
+  ]
 }
