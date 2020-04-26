@@ -2,7 +2,7 @@
   "ATV - Get Google Accounts": [
     {
       "TYPE": "jobType.PASSTHROUGH",
-      "SYNTAX": "grep 'com.android.contacts\"' /data/system/sync/accounts.xml | cut -d'\"' -f8"
+      "SYNTAX": "awk '/com.android.contacts/ { if (match($0, /account=\"[^\"]+\"/)) print(substr($0, RSTART + 9, RLENGTH - 10)) }' /data/system/sync/accounts.xml"
     }
   ]
 }
