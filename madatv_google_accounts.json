@@ -1,5 +1,5 @@
 {
-  "Custom - Get Google Accounts": [
+  "ATV - Get Google Accounts": [
     {
       "TYPE": "jobType.PASSTHROUGH",
       "SYNTAX": "grep 'com.android.contacts\"' /data/system/sync/accounts.xml | cut -d'\"' -f8"
