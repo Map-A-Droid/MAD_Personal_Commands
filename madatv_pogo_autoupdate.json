@@ -14,7 +14,7 @@
   "ATV - PoGo auto-update: status": [
     {
       "TYPE": "jobType.PASSTHROUGH",
-      "SYNTAX": "[ -f /sdcard/disableautopogoupdate ] && echo enabled || echo disabled"
+      "SYNTAX": "[ -f /sdcard/disableautopogoupdate ] && echo disabled || echo enabled"
     }
   ]
 }
