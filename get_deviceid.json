@@ -1,0 +1,8 @@
+{
+  "Get DeviceID (used in MAD Auth Backend)": [
+    {
+      "TYPE": "jobType.PASSTHROUGH",
+      "SYNTAX": "awk -F'>' '/auth_id/{print $2}' /data/data/com.mad.pogodroid/shared_prefs/com.mad.pogodroid_preferences.xml |  cut -d '<' -f1"
+    }
+  ]
+}
