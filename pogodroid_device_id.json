@@ -1,0 +1,9 @@
+{
+        "Custom - Pogodroid Device ID":
+        [
+                {
+                        "TYPE": "jobType.PASSTHROUGH",
+                        "SYNTAX": "awk -F '[<>]' '/auth_id/{print $3}' /data/data/com.mad.pogodroid/shared_prefs/com.mad.pogodroid_preferences.xml"
+                }
+        ]
+}
