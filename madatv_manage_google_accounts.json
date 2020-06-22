@@ -2,7 +2,7 @@
   "ATV - Google Account: remove": [
     {
       "TYPE": "jobType.PASSTHROUGH",
-      "SYNTAX": "su -c 'am force-stop com.nianticlabs.pokemongo && rm -f /data/system/sync/accounts.xml /data/system_de/0/accounts_de.db /data/system_ce/0/accounts_ce.db && reboot'"
+      "SYNTAX": "[ -e /sdcard/google-account ] && su -c 'am force-stop com.nianticlabs.pokemongo && rm -f /data/system/sync/accounts.xml /data/system_de/0/accounts_de.db /data/system_ce/0/accounts_ce.db && reboot' || echo 'Error! Add /sdcard/google-account first'"
     }
   ],
   "ATV - Google Account: login (/sdcard/google-account)": [
