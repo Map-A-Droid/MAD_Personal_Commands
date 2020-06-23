@@ -9,7 +9,7 @@
     {
       "TYPE": "jobType.PASSTHROUGH",
       "SYNTAX": "su -c 'am force-stop com.nianticlabs.pokemongo && sleep 6 && am start -a android.settings.ADD_ACCOUNT_SETTINGS && sleep 4 && input keyevent 20 && input keyevent 20 && sleep 1 && input keyevent 66 && sleep 1 && input text \"$(sed -n 1p /sdcard/google-account)\" && sleep 1 && input keyevent 66 && sleep 1 && input text \"$(sed -n 2p /sdcard/google-account)\" && sleep 1 && input keyevent 66 && echo OK'",
-      "WAITTIME": 30
+      "WAITTIME": 5
     }
   ]
 }
