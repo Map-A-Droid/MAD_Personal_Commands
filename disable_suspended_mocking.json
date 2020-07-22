@@ -1,0 +1,15 @@
+{
+            "Custom - Disable suspended mocking":
+        [
+        {
+                "TYPE": "jobType.PASSTHROUGH",
+                "SYNTAX": "sed -i -e 's,\"suspended_mocking\" value=\"true\",\"suspended_mocking\" value=\"false\",' /data/data/de.grennith.rgc.remotegpscontroller/shared_prefs/de.grennith.rgc.remotegpscontroller_preferences.xml >/sdcard/de.grennith.rgc.remotegpscontroller_preferences.xml",
+                "WAITTIME": 0
+        },
+        {
+                "TYPE": "jobType.REBOOT",
+                "SYNTAX": "Step 2 of 2 - REBOOT DEVICE",
+                "WAITTIME": 0
+        }
+        ]
+}
