@@ -11,6 +11,8 @@ To use these jobs,
 
 ### `madatv_manage_google_accounts.json`
 
+32-bit ONLY.
+
 The remove job simply deletes the account files from the device. A reboot is advised, but not strictly required.
 
 The login job assumes the presence a file named `/sdcard/google-account` with the Google email address in line 1 and the Google password in line 2.
