@@ -1,0 +1,9 @@
+{
+  "Uninstall POGO APP":
+  [
+    {
+      "TYPE": "jobType.PASSTHROUGH",
+      "SYNTAX": "pm uninstall -k com.nianticlabs.pokemongo && reboot"
+    }
+  ]
+}
